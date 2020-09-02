@@ -89,7 +89,7 @@
 
   // Smooth scroll for the menu and links with .scrollto classes
   $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var target = $(this.hash);
       if (target.length) {
         var top_space = 0;
@@ -154,8 +154,8 @@
 
   $(".carousel").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-      if (direction == 'left') $(this).carousel('next');
-      if (direction == 'right') $(this).carousel('prev');
+      if (direction === 'left') $(this).carousel('next');
+      if (direction === 'right') $(this).carousel('prev');
     },
     allowPageScroll:"vertical"
   });
