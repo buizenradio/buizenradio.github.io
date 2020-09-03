@@ -1052,6 +1052,468 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
+
+
+/* Portfoliob Section
+--------------------------------*/
+
+#portfoliob {
+  padding: 60px 0;
+}
+
+#portfoliob #portfoliob-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfoliob #portfoliob-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfoliob #portfoliob-flters li:hover,
+#portfoliob #portfoliob-flters li.filter-active {
+  background: #18d26e;
+  color: #fff;
+}
+
+#portfoliob #portfoliob-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfoliob .portfoliob-wrap {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+#portfoliob .portfoliob-wrap:hover {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+#portfoliob .portfoliob-item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+#portfoliob .portfoliob-item figure {
+  background: #000;
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+
+#portfoliob .portfoliob-item figure:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#portfoliob .portfoliob-item figure .link-preview,
+#portfoliob .portfoliob-item figure .link-details {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+
+#portfoliob .portfoliob-item figure .link-preview i,
+#portfoliob .portfoliob-item figure .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #333;
+}
+
+#portfoliob .portfoliob-item figure .link-preview:hover,
+#portfoliob .portfoliob-item figure .link-details:hover {
+  background: #18d26e;
+}
+
+#portfoliob .portfoliob-item figure .link-preview:hover i,
+#portfoliob .portfoliob-item figure .link-details:hover i {
+  color: #fff;
+}
+
+#portfoliob .portfoliob-item figure .link-preview {
+  left: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#portfoliob .portfoliob-item figure .link-details {
+  right: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#portfoliob .portfoliob-item figure:hover .link-preview {
+  opacity: 1;
+  left: calc(50% - 44px);
+}
+
+#portfoliob .portfoliob-item figure:hover .link-details {
+  opacity: 1;
+  right: calc(50% - 44px);
+}
+
+#portfoliob .portfoliob-item .portfoliob-info {
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+  height: 90px;
+  border-radius: 0 0 3px 3px;
+}
+
+#portfoliob .portfoliob-item .portfoliob-info h4 {
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+}
+
+#portfoliob .portfoliob-item .portfoliob-info h4 a {
+  color: #333;
+}
+
+#portfoliob .portfoliob-item .portfoliob-info h4 a:hover {
+  color: #18d26e;
+}
+
+#portfoliob .portfoliob-item .portfoliob-info p {
+  padding: 0;
+  margin: 0;
+  color: #b8b8b8;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+/* Portfolio Section
+--------------------------------*/
+
+#portfolioc {
+  padding: 60px 0;
+}
+
+#portfolioc #portfolioc-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolioc #portfolioc-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolioc #portfolioc-flters li:hover,
+#portfolioc #portfolioc-flters li.filter-active {
+  background: #18d26e;
+  color: #fff;
+}
+
+#portfolioc #portfolioc-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfolioc .portfolioc-wrap {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+#portfolioc .portfolioc-wrap:hover {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+#portfolioc .portfolioc-item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+#portfolioc .portfolioc-item figure {
+  background: #000;
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+
+#portfolioc .portfolioc-item figure:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#portfolioc .portfolioc-item figure .link-preview,
+#portfolioc .portfolioc-item figure .link-details {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+
+#portfolioc .portfolioc-item figure .link-preview i,
+#portfolioc .portfolioc-item figure .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #333;
+}
+
+#portfolioc .portfolioc-item figure .link-preview:hover,
+#portfolioc .portfolioc-item figure .link-details:hover {
+  background: #18d26e;
+}
+
+#portfolioc .portfolioc-item figure .link-preview:hover i,
+#portfolioc .portfolioc-item figure .link-details:hover i {
+  color: #fff;
+}
+
+#portfolioc .portfolioc-item figure .link-preview {
+  left: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#portfolioc .portfolioc-item figure .link-details {
+  right: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#portfolioc .portfolioc-item figure:hover .link-preview {
+  opacity: 1;
+  left: calc(50% - 44px);
+}
+
+#portfolioc .portfolioc-item figure:hover .link-details {
+  opacity: 1;
+  right: calc(50% - 44px);
+}
+
+#portfolioc .portfolioc-item .portfolioc-info {
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+  height: 90px;
+  border-radius: 0 0 3px 3px;
+}
+
+#portfolioc .portfolioc-item .portfolioc-info h4 {
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+}
+
+#portfolioc .portfolioc-item .portfolioc-info h4 a {
+  color: #333;
+}
+
+#portfolioc .portfolioc-item .portfolioc-info h4 a:hover {
+  color: #18d26e;
+}
+
+#portfolioc .portfolioc-item .portfolioc-info p {
+  padding: 0;
+  margin: 0;
+  color: #b8b8b8;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Portfolio Section
+--------------------------------*/
+
+#portfoliod {
+  padding: 60px 0;
+}
+
+#portfoliod #portfoliod-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfoliod #portfoliod-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfoliod #portfoliod-flters li:hover,
+#portfoliod #portfoliod-flters li.filter-active {
+  background: #18d26e;
+  color: #fff;
+}
+
+#portfoliod #portfoliod-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfoliod .portfoliod-wrap {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+#portfoliod .portfoliod-wrap:hover {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+#portfolio .portfolio-item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+#portfoliod .portfoliod-item figure {
+  background: #000;
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+
+#portfoliod .portfoliod-item figure:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#portfoliod .portfoliod-item figure .link-preview,
+#portfoliod .portfoliod-item figure .link-details {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+
+#portfoliod .portfoliod-item figure .link-preview i,
+#portfoliod .portfoliod-item figure .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #333;
+}
+
+#portfoliod .portfoliod-item figure .link-preview:hover,
+#portfoliod .portfoliod-item figure .link-details:hover {
+  background: #18d26e;
+}
+
+#portfoliod .portfoliod-item figure .link-preview:hover i,
+#portfoliod .portfoliod-item figure .link-details:hover i {
+  color: #fff;
+}
+
+#portfoliod .portfoliod-item figure .link-preview {
+  left: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#portfoliod .portfoliod-item figure .link-details {
+  right: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#portfoliod .portfoliod-item figure:hover .link-preview {
+  opacity: 1;
+  left: calc(50% - 44px);
+}
+
+#portfoliod .portfoliod-item figure:hover .link-details {
+  opacity: 1;
+  right: calc(50% - 44px);
+}
+
+#portfoliod .portfoliod-item .portfoliod-info {
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+  height: 90px;
+  border-radius: 0 0 3px 3px;
+}
+
+#portfoliod .portfoliod-item .portfoliod-info h4 {
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+}
+
+#portfoliod .portfoliod-item .portfoliod-info h4 a {
+  color: #333;
+}
+
+#portfoliod .portfoliod-item .portfoliod-info h4 a:hover {
+  color: #18d26e;
+}
+
+#portfoliod .portfoliod-item .portfoliod-info p {
+  padding: 0;
+  margin: 0;
+  color: #b8b8b8;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+
+
 /* Clients Section
 --------------------------------*/
 

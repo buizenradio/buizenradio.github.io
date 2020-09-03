@@ -185,6 +185,48 @@
 
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
+  
+    // Porfoliob isotope and filter
+  var portfoliobIsotope = $('.portfoliob-container').isotope({
+    itemSelector: '.portfoliob-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('#portfoliob-flters li').on( 'click', function() {
+    $("#portfoliob-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfoliobIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
+
+  // Porfolioc isotope and filter
+  var portfoliocIsotope = $('.portfolioc-container').isotope({
+    itemSelector: '.portfolioc-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('#portfolioc-flters li').on( 'click', function() {
+    $("#portfolioc-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfoliocIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
+
+  // Porfolio isotope and filter
+  var portfoliodIsotope = $('.portfoliod-container').isotope({
+    itemSelector: '.portfoliod-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('#portfoliod-flters li').on( 'click', function() {
+    $("#portfoliod-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfoliodIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
 
   // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
