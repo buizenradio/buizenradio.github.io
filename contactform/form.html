@@ -1,0 +1,65 @@
+<!--
+1. verander NIET de names, de rest kan je wel aanpassen.
+2. Pas de CSS aan naar wens, en plak die in jouw CSS of in de <head> van je HTML.
+3. Plak de HTML-code in jouw pagina. 
+4. Open het PHP-file en verander daar je emailadres en evt ook andere teksten.
+5. Upload PHP + je pagina  naar de server en test het ONLINE.
+-->
+
+<style>
+form {
+	text-align:center;
+	margin-top:20px;
+}
+
+input, textarea {
+	padding:15px; 
+	border:1px solid #abe; 
+	border-radius: 6px;
+	width:80%;
+	font:20px Verdana;
+	margin-bottom:20px;
+	background:#eef;
+}
+
+input[type=submit] {
+	padding:15px; 
+	border-radius: 10px;
+	background:linear-gradient(#6df, #29f) ;
+	border:0px solid #47d;
+	cursor:pointer;
+	color:white;
+	width:240px;
+	
+	}
+	
+input[type=submit]:active, input[type=submit]:hover {
+	background:linear-gradient(#7ef, #3af)  
+}
+
+::-webkit-input-placeholder { 
+    color:    #abe; }
+:-moz-placeholder {  
+   color:    #abe;
+   opacity:  1; }
+:-ms-input-placeholder { 
+   color:    #abe; }
+   
+</style>
+
+
+
+
+
+
+<form name="contactform" method="post" action="send_form_email2.php">
+
+<input type="text" name="first_name" placeholder="Naam"  size="30"/>
+<br />
+<input type="email" name="email" placeholder="Email"  size="30"/>
+<br />
+<textarea name="comments" placeholder="Bericht" maxlength="1000" cols="28" rows="6"></textarea>
+<br />
+<input type="submit" value="Verstuur" />								
+								
+</form> 
