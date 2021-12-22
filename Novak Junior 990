@@ -100,13 +100,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/novak standardkl.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/novak standard.jpg" data-lightbox="portfolio" data-title="Novak Standard 1850" class="link-preview" title="grote foto"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/novak junior 990kl.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/novak junior 990.jpg" data-lightbox="portfolio" data-title="Novak Junior 990" class="link-preview" title="grote foto"><i class="ion ion-eye"></i></a>
      
               </figure>
 
               <div class="portfolio-info">
-             <h4>Novak Standard 1850</h4>
+             <h4>Novak Junior 990</h4>
                 <p></p>
               </div>
             </div>
@@ -114,15 +114,28 @@
            <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/novak standard2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/novak standard2.jpg" data-lightbox="portfolio" data-title="Novak Standard 1850" class="link-preview" title="grote foto"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/novak junior 990 1kl.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/novak junior 990 1.jpg" data-lightbox="portfolio" data-title="Novak Junior 990" class="link-preview" title="grote foto"><i class="ion ion-eye"></i></a>
      
               </figure>
 
               <div class="portfolio-info">
-             <h4>Novak Standard 1850</h4>
+             <h4>Novak Junior 990</h4>
                              <p></p>
-   
+                 </div>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/novak junior 990 2kl.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/novak junior 990 2.jpg" data-lightbox="portfolio" data-title="Novak Junior 990" class="link-preview" title="grote foto"><i class="ion ion-eye"></i></a>
+     
+              </figure>
+
+              <div class="portfolio-info">
+             <h4>Novak Junior 990</h4>
+                             <p></p>
         </div>
 
  
@@ -131,7 +144,9 @@
 
         </div>
 
-
+              </div>
+            </div>
+          </div>
 
 
 
