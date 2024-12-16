@@ -96,7 +96,7 @@ document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation
                <i>Buizen: ECH4, EBF2, EBF2, EL3, EM4, AZ1 </i><BR>
                <i>Afmetingen (BxHxD): 650 x 450 x 280mm</i><BR>
                <i>Golfbanden: KG MG LG</i><BR>
-               <i>Info: 12 afgestemde kringen</i><BR>  
+ 
              
  <div class="row">
           <div class="col-lg-12">
