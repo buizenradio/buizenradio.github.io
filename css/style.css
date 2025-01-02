@@ -902,6 +902,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Portfolio Section
 --------------------------------*/
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 
 #portfolio {
   padding: 60px 0;
