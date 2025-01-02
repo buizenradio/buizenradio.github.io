@@ -902,11 +902,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Portfolio Section
 --------------------------------*/
-IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
+.titel-container {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  height: 100vh; /* Optioneel, afhankelijk van de gewenste hoogte */
+  }
 
+img {
+  max-width: 100%; /* Optioneel, om ervoor te zorgen dat de afbeelding niet groter wordt dan de container */
+}
 #portfolio {
   padding: 60px 0;
 }
@@ -2062,7 +2067,3 @@ IMG.displayed {
 	width:100%;
 	height:100%;
 }
-IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
