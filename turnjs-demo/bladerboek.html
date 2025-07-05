@@ -3,10 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>Mijn Bladerboek</title>
-  <!-- jQuery via CDN -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Turn.js via CDN -->
-  <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@4/turn.min.js"></script>
   <style>
     #bladerboek {
       width: 800px;
@@ -33,8 +29,11 @@
   <div class="pagina"><img src="images/page3.jpg" alt="Pagina 3" /></div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/turn.js@4.1.0/turn.min.js"></script>
+
 <script>
-  $(document).ready(function(){
+  $(function() {
     $('#bladerboek').turn({
       width: 800,
       height: 600,
