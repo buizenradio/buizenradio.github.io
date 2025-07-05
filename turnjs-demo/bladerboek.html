@@ -1,45 +1,112 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mijn Bladerboek</title>
-  <style>
-    #bladerboek {
-      width: 800px;
-      height: 600px;
-      margin: 40px auto;
-      border: 1px solid #ccc;
-    }
-    #bladerboek .pagina {
-      width: 400px;
-      height: 600px;
-    }
-    #bladerboek img {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-  </style>
+<meta charset="UTF-8" />
+<title>Bladerboek simpel</title>
+<style>
+  body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    background: #f5f5f5;
+  }
+  #bladerboek {
+    width: 820px; /* 2x 400px + gap */
+    height: 600px;
+    background: white;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  .pagina {
+    width: 400px;
+    height: 600px;
+    background: #eee;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagina img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
 
+<h1>Mijn Bladerboek</h1>
+
 <div id="bladerboek">
-  <div class="pagina"><img src="images/page1.jpg" alt="Pagina 1" /></div>
-  <div class="pagina"><img src="images/page2.jpg" alt="Pagina 2" /></div>
-  <div class="pagina"><img src="images/page3.jpg" alt="Pagina 3" /></div>
+  <div class="pagina" id="pagina1"></div>
+  <div class="pagina" id="pagina2"></div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://unpkg.com/turn.js@4.1.0/turn.min.js"></script>
+<div>
+  <button id="vorige">← Vorige</button>
+  <button id="volgende">Volgende →</button>
+</div>
 
 <script>
-  $(function() {
-    $('#bladerboek').turn({
-      width: 800,
-      height: 600,
-      autoCenter: true
-    });
+  // Vervang hier de URLs door je eigen plaatjes of PDF-conversies naar afbeeldingen
+  const paginaUrls = [
+    'images/page1.jpg',
+    'images/page2.jpg',
+    'images/page3.jpg',
+    'images/page4.jpg',
+    'images/page5.jpg',
+    'images/page6.jpg'
+  ];
+
+  let huidigeIndex = 0; // begint bij pagina 1 links en 2 rechts
+
+  const pagina1 = document.getElementById('pagina1');
+  const pagina2 = document.getElementById('pagina2');
+
+  function updateBladerboek() {
+    pagina1.innerHTML = '';
+    pagina2.innerHTML = '';
+
+    if (paginaUrls[huidigeIndex]) {
+      const img1 = document.createElement('img');
+      img1.src = paginaUrls[huidigeIndex];
+      pagina1.appendChild(img1);
+    }
+    if (paginaUrls[huidigeIndex + 1]) {
+      const img2 = document.createElement('img');
+      img2.src = paginaUrls[huidigeIndex + 1];
+      pagina2.appendChild(img2);
+    }
+  }
+
+  document.getElementById('vorige').addEventListener('click', () => {
+    if (huidigeIndex > 0) {
+      huidigeIndex -= 2;
+      if (huidigeIndex < 0) huidigeIndex = 0;
+      updateBladerboek();
+    }
   });
+
+  document.getElementById('volgende').addEventListener('click', () => {
+    if (huidigeIndex + 2 < paginaUrls.length) {
+      huidigeIndex += 2;
+      updateBladerboek();
+    }
+  });
+
+  // Eerste keer laden
+  updateBladerboek();
 </script>
 
 </body>
