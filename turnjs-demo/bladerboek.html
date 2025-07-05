@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8" />
-<title>Bladerboek simpel</title>
+<title>Beveiligd Bladerboek</title>
 <style>
   body {
     font-family: sans-serif;
@@ -13,7 +13,7 @@
     background: #f5f5f5;
   }
   #bladerboek {
-    width: 820px; /* 2x 400px + gap */
+    width: 820px;
     height: 600px;
     background: white;
     box-shadow: 0 0 12px rgba(0,0,0,0.2);
@@ -21,20 +21,16 @@
     gap: 20px;
     overflow: hidden;
     border-radius: 6px;
+    user-select: none;
   }
   .pagina {
     width: 400px;
     height: 600px;
     background: #eee;
     box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .pagina img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   button {
     margin-top: 20px;
@@ -44,9 +40,9 @@
   }
 </style>
 </head>
-<body>
+<body oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;">
 
-<h1>Mijn Bladerboek</h1>
+<h1>Beveiligd Bladerboek</h1>
 
 <div id="bladerboek">
   <div class="pagina" id="pagina1"></div>
@@ -59,35 +55,21 @@
 </div>
 
 <script>
-  // Vervang hier de URLs door je eigen plaatjes of PDF-conversies naar afbeeldingen
   const paginaUrls = [
     'images/page1.jpg',
     'images/page2.jpg',
     'images/page3.jpg',
-    'images/page4.jpg',
-    'images/page5.jpg',
-    'images/page6.jpg'
+    'images/page4.jpg'
   ];
 
-  let huidigeIndex = 0; // begint bij pagina 1 links en 2 rechts
+  let huidigeIndex = 0;
 
   const pagina1 = document.getElementById('pagina1');
   const pagina2 = document.getElementById('pagina2');
 
   function updateBladerboek() {
-    pagina1.innerHTML = '';
-    pagina2.innerHTML = '';
-
-    if (paginaUrls[huidigeIndex]) {
-      const img1 = document.createElement('img');
-      img1.src = paginaUrls[huidigeIndex];
-      pagina1.appendChild(img1);
-    }
-    if (paginaUrls[huidigeIndex + 1]) {
-      const img2 = document.createElement('img');
-      img2.src = paginaUrls[huidigeIndex + 1];
-      pagina2.appendChild(img2);
-    }
+    pagina1.style.backgroundImage = paginaUrls[huidigeIndex] ? `url('${paginaUrls[huidigeIndex]}')` : '';
+    pagina2.style.backgroundImage = paginaUrls[huidigeIndex + 1] ? `url('${paginaUrls[huidigeIndex + 1]}')` : '';
   }
 
   document.getElementById('vorige').addEventListener('click', () => {
@@ -105,7 +87,9 @@
     }
   });
 
-  // Eerste keer laden
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  document.addEventListener('dragstart', e => e.preventDefault());
+
   updateBladerboek();
 </script>
 
