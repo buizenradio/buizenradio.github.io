@@ -1,0 +1,1 @@
+// PDF.js worker - plaats hier pdf.worker.js
